@@ -34,10 +34,6 @@ a {
   align-items: center;
   width: 3rem;
   height: 3rem;
-  
-  path {
-    fill: #FCA311;
-  }
 }
 
 a > img {
