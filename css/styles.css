@@ -125,8 +125,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.5rem;
-  height: 3.5rem;
 
   path {
     fill: var(--foreground);
