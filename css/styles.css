@@ -1,9 +1,13 @@
+:root {
+  --gradientAngle: 120deg;
+}
+
 /*
  * Gradients for masking
  */
 .rainbow {
   background: linear-gradient(
-    120deg,
+    var(--gradientAngle),
     rgba(255, 0, 0, 1) 0%,
     rgba(255, 154, 0, 1) 10%,
     rgba(208, 222, 33, 1) 20%,
@@ -18,63 +22,85 @@
   );
 }
 .sunset {
-  background: linear-gradient(45deg, #f3ec78, #af4261);
+  background: linear-gradient(
+    var(--gradientAngle),
+    #f3ec78 0%,
+    #af4261 50%,
+    #f3ec78 100%
+  );
 }
 .greenish {
-  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  background: linear-gradient(
+    var(--gradientAngle),
+    rgb(182, 244, 146) 0%,
+    rgb(51, 139, 147) 50%,
+    rgb(182, 244, 146) 100%
+  );
 }
 .bubblegum {
   background: linear-gradient(
-    106.5deg,
-    rgba(255, 215, 185, 0.91) 23%,
-    rgba(223, 159, 247, 0.8) 93%
+    var(--gradientAngle),
+    rgb(255, 215, 185) 0%,
+    rgb(216, 110, 255) 50%,
+    rgb(255, 215, 185) 100%
   );
 }
 .citrus {
   background: linear-gradient(
-    109.6deg,
-    rgb(255, 230, 109) 11.2%,
-    rgb(87, 232, 107) 100.2%
+    var(--gradientAngle),
+    rgb(255, 230, 109) 0%,
+    rgb(87, 232, 107) 50%,
+    rgb(255, 230, 109) 100%
   );
 }
 .dreamy {
   background: linear-gradient(
-    68.6deg,
-    rgb(252, 165, 241) 1.8%,
-    rgb(181, 255, 255) 100.5%
+    var(--gradientAngle),
+    rgb(252, 165, 241) 0%,
+    rgb(181, 255, 255) 50%,
+    rgb(252, 165, 241) 100%
   );
 }
 .bronze {
   background: linear-gradient(
-    87.4deg,
-    rgb(255, 241, 165) 1.9%,
-    rgb(200, 125, 76) 49.7%,
-    rgb(83, 54, 54) 100.5%
+    var(--gradientAngle),
+    rgb(255, 241, 165) 0%,
+    rgb(200, 125, 76) 33%,
+    rgb(83, 54, 54) 66%,
+    rgb(255, 241, 165) 100%
   );
 }
 .plum {
-  background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+  background: linear-gradient(
+    var(--gradientAngle),
+    rgb(173, 83, 137) 0%,
+    rgb(60, 16, 83) 50%,
+    rgb(173, 83, 137) 100%
+  );
 }
 .unicorn {
   background: linear-gradient(
-    179.4deg,
-    rgb(253, 240, 233) 2.2%,
-    rgb(255, 194, 203) 96.2%
+    var(--gradientAngle),
+    rgb(253, 240, 233) 0%,
+    rgb(255, 59, 89) 50%,
+    rgb(253, 240, 233) 100%
   );
 }
 .sun {
   background: linear-gradient(
-    109.6deg,
-    rgb(255, 219, 47) 11.2%,
-    rgb(244, 253, 0) 100.2%
+    var(--gradientAngle),
+    rgb(255, 213, 0) 0%,
+    rgb(253, 255, 185) 50%,
+    rgb(255, 213, 0) 100%
   );
 }
 .rainbow2 {
   background: linear-gradient(
-    96.2deg,
-    rgb(255, 230, 112) 10.4%,
-    rgb(255, 100, 100) 43.8%,
-    rgb(0, 93, 219) 105.8%
+    var(--gradientAngle),
+    rgb(255, 230, 112) 0%,
+    rgb(255, 100, 100) 33%,
+    rgb(0, 93, 219) 66%,
+    rgb(255, 230, 112) 100%
   );
 }
 
@@ -98,6 +124,15 @@ body {
   gap: 1rem;
 }
 
+@keyframes rightToLeft {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
 .gradient-mask {
   background-color: var(--foreground);
   background-clip: text;
@@ -105,6 +140,9 @@ body {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  /* animation */
+  background-size: 200%;
+  animation: rightToLeft 4s linear infinite;
 }
 
 h1 {
