@@ -31,5 +31,3 @@ Then open http://localhost:8000.
 ### Caching
 
 Cloudflare caches CSS for up to 4 hours, so returning visitors can see old styles for a while after a deploy.
-
-Most edits done using GitHub app while laying in bed so plz don't judge commit history
