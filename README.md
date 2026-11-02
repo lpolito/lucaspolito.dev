@@ -14,16 +14,16 @@ Then open http://localhost:8000.
 
 ### What's where
 
-- `index.html`: the page, its metadata, and the script that picks a random title gradient
+- `index.html`: the page, its metadata, and the script that picks a random gradient
 - `css/styles.css`: styles and gradients
-- `css/reset.css`: CSS reset
-- `fonts/`: self-hosted Work Sans (weight 600, Latin subset) and its license
+- `icons/`: profile icons, used as CSS masks so they can fill with the gradient on hover
+- `fonts/`: self-hosted Work Sans (weights 500 and 600, Latin subset) and its license
 - `favicon.*`, `apple-touch-icon.png`, `og-image.png`: browser icons and the social preview image
 - `CNAME`: custom domain for GitHub Pages
 
 ### Adding a gradient
 
-1. Add a class to `css/styles.css`.
+1. Add a class to `css/styles.css` that sets `--gradientStops`.
 2. Add its name to `gradientClasses` in `index.html`.
 3. Keep every part of it at 3:1 contrast or better against `--background`.
 
