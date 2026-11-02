@@ -14,9 +14,10 @@ Then open http://localhost:8000.
 
 ### What's where
 
-- `index.html`: the page, its metadata, and the script that picks a random gradient
+- `index.html`: the page, its metadata, and the scripts that pick a random gradient and build the email link on click
+- `404.html`: not-found page, which uses root-relative paths because GitHub Pages serves it at any URL depth
 - `css/styles.css`: styles and gradients
-- `icons/`: profile icons, used as CSS masks so they can fill with the gradient on hover
+- `icons/`: link icons, used as CSS masks so they can fill with the gradient on hover
 - `fonts/`: self-hosted Work Sans (weights 500 and 600, Latin subset) and its license
 - `favicon.*`, `apple-touch-icon.png`, `og-image.png`: browser icons and the social preview image
 - `CNAME`: custom domain for GitHub Pages

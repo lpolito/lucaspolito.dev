@@ -200,8 +200,8 @@ h1 {
   --icon: url("../icons/github.svg");
 }
 
-.icon-gitlab {
-  --icon: url("../icons/gitlab.svg");
+.icon-email {
+  --icon: url("../icons/email.svg");
 }
 
 .icon-linkedin {
@@ -234,6 +234,15 @@ a {
     outline: 2px solid var(--foreground);
     outline-offset: 0.25rem;
   }
+}
+
+#home {
+  margin-top: 2.5rem;
+  color: var(--foreground);
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
 }
 
 @media (prefers-reduced-motion: reduce) {

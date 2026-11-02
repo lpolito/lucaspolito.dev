@@ -8,10 +8,10 @@
       content="width=device-width,minimum-scale=1,initial-scale=1"
     />
 
-    <title>Lucas Polito — Full-stack engineer & front-end specialist</title>
+    <title>Lucas Polito — Full-stack engineer, front-end at heart</title>
     <meta
       name="description"
-      content="Lucas Polito is a Michigan-based full-stack engineer and front-end specialist working in React, TypeScript, and Node.js, with a focus on UX and accessibility."
+      content="Lucas Polito is a Michigan-based full-stack engineer on a front-end platform team, building component libraries and AI tooling, with a love for UI, UX, and DX."
     />
     <meta name="author" content="Lucas Polito" />
     <meta name="theme-color" content="#121214" />
@@ -21,18 +21,18 @@
     <meta property="og:url" content="https://lucaspolito.dev/" />
     <meta
       property="og:title"
-      content="Lucas Polito — Full-stack engineer & front-end specialist"
+      content="Lucas Polito — Full-stack engineer, front-end at heart"
     />
     <meta
       property="og:description"
-      content="Lucas Polito is a Michigan-based full-stack engineer and front-end specialist working in React, TypeScript, and Node.js, with a focus on UX and accessibility."
+      content="Lucas Polito is a Michigan-based full-stack engineer on a front-end platform team, building component libraries and AI tooling, with a love for UI, UX, and DX."
     />
     <meta property="og:image" content="https://lucaspolito.dev/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Lucas Polito — Full-stack engineer & front-end specialist"
+      content="Lucas Polito — Full-stack engineer, front-end at heart"
     />
     <meta name="twitter:card" content="summary_large_image" />
 
@@ -45,7 +45,6 @@
         "jobTitle": "Full-stack Engineer",
         "sameAs": [
           "https://github.com/lpolito",
-          "https://gitlab.com/lpolito",
           "https://www.linkedin.com/in/lucaspolito/"
         ]
       }
@@ -94,21 +93,33 @@
           gradientClasses[Math.floor(Math.random() * gradientClasses.length)];
         document.getElementById("main").classList.add(randomGradientClass);
       </script>
-      <p id="tagline">Full-stack engineer &amp; front-end specialist</p>
+      <p id="tagline">Full-stack engineer, front-end at heart</p>
       <nav id="links" aria-label="Profiles">
-        <a href="https://github.com/lpolito" aria-label="Lucas Polito GitHub">
+        <a
+          href="https://github.com/lpolito"
+          rel="me"
+          aria-label="Lucas Polito GitHub"
+        >
           <span class="icon icon-github"></span>
-        </a>
-        <a href="https://gitlab.com/lpolito" aria-label="Lucas Polito GitLab">
-          <span class="icon icon-gitlab"></span>
         </a>
         <a
           href="https://www.linkedin.com/in/lucaspolito/"
+          rel="me"
           aria-label="Lucas Polito LinkedIn"
         >
           <span class="icon icon-linkedin"></span>
         </a>
+        <a id="email" href="#" aria-label="Email Lucas Polito">
+          <span class="icon icon-email"></span>
+        </a>
       </nav>
+      <script type="text/javascript">
+        // encoded and only decoded on click to keep the address from scrapers
+        document.getElementById("email").addEventListener("click", (event) => {
+          event.preventDefault();
+          location.href = atob("bWFpbHRvOnNob3V0QGx1Y2FzcG9saXRvLmRldg==");
+        });
+      </script>
     </main>
   </body>
 </html>
