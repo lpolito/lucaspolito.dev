@@ -7,7 +7,7 @@
   </defs>
   <rect width="32" height="32" rx="6" fill="#121214" />
   <path
-    d="M4 8h4v12h6v4H4zM16 8h6.5a5.5 5.5 0 0 1 0 11H20v5h-4zM20 11.5v4h2.5a2 2 0 0 0 0-4z"
+    d="M5 8h4v12h6v4H5zM17 8h6.5a5.5 5.5 0 0 1 0 11H21v5h-4zM21 11.5v4h2.5a2 2 0 0 0 0-4z"
     fill="url(#gradient)"
   />
 </svg>
